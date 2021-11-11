@@ -1,5 +1,5 @@
 {
-  "name": "vuei5",
+  "name": "@todms/vuei5",
   "version": "1.0.0",
   "description": "Vue.js for native ui5 apps",
   "main": "index.js",
@@ -46,5 +46,11 @@
     "ncp": "^2.0.0",
     "pug": "^3.0.2",
     "sass": "^1.43.4"
-  }
+  },
+  "files": [
+    "ui5.yaml",
+    "lib",
+    "scripts",
+    "src"
+  ]
 }

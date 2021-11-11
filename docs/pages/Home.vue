@@ -63,7 +63,7 @@ const Shell = ui5("sap/m/Shell");
 const Image = ui5("sap/m/Image");
 const MessageStrip = ui5("sap/m/MessageStrip");
 
-const imagePath = "/assets/tear.png";
+const imagePath = "./assets/tear.png";
 </script>
 
 <style scoped>

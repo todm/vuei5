@@ -3,7 +3,7 @@
 Vuei5 allows you to build [UI5](https://openui5.org/) apps using [vuejs](https://vuejs.org/). The resulting apps can be used both in standalone mode and in sap launchpad. UI5 Controls will be wrapped as vue components that can be used with the usual vuejs features. The components will then be added to the regular ui5 component system. It is also possible to let only a part of the app be controlled by vuei5. This project **does not** use webcomponents. Just the regular UI5 controls.
 
 <p align="center">
-<img src="test/webapp/assets/tear.png" />
+<img src="docs/assets/tear.png" />
 </p>
 <br/>
 
