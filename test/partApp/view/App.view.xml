@@ -1,0 +1,18 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="test.controller.App" displayBlock="true">
+		<App>
+			<Page title="Vuei5 test">
+				<Panel>
+					<Text text="This is a normal ui5 app but the content of the following vbox will be controlled by vuei5"/>
+					<VBox id="vuei5VBox"/>
+
+					<IconTabHeader select="onSelect">
+						<items>
+							<IconTabFilter key="test" text="Home" />
+							<IconTabFilter key="test2" text="Examples" />
+							<IconTabFilter key="test3" text="API Reference" />
+						</items>
+					</IconTabHeader>
+				</Panel>
+			</Page>
+		</App>
+</mvc:View>

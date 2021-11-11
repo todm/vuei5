@@ -1,0 +1,50 @@
+{
+  "name": "vuei5",
+  "version": "1.0.0",
+  "description": "Vue.js for native ui5 apps",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs",
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "install": "node scripts/updateVue.js",
+    "docs:build": "ui5 build --config ui5-docs.yaml --dest ./dist --clean-dest",
+    "postdocs:build": "node scripts/_copyResources.js",
+    "update-vue": "node scripts/updateVue.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/todm/vuei5.git"
+  },
+  "keywords": [
+    "ui5",
+    "vue",
+    "fiori",
+    "sap",
+    "task",
+    "middleware",
+    "framework"
+  ],
+  "author": "todm",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/todm/vuei5/issues"
+  },
+  "homepage": "https://github.com/todm/vuei5#readme",
+  "dependencies": {
+    "@babel/core": "^7.16.0",
+    "@todms/babel-plugin-ui5-esm": "^1.0.1",
+    "@ui5/logger": "^2.0.1",
+    "micromatch": "^4.0.4",
+    "node-fetch": "^2.1.0",
+    "vue": "^3.2.21"
+  },
+  "devDependencies": {
+    "@ui5/cli": "^2.14.0",
+    "ncp": "^2.0.0",
+    "pug": "^3.0.2",
+    "sass": "^1.43.4"
+  }
+}

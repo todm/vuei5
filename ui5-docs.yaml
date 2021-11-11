@@ -1,0 +1,38 @@
+specVersion: '2.3'
+metadata:
+  name: vuei5-docs
+type: application
+resources:
+  configuration:
+    paths:
+      webapp: ./docs
+server:
+  customMiddleware:
+    - name: vuei5-middleware-sfc
+      beforeMiddleware: serveResources
+builder:
+  cachebuster:
+    signatureType: time
+  customTasks:
+    - name: vuei5-task-sfc
+      beforeTask: escapeNonAsciiCharacters
+      configuration:
+        stylesheet: "/style.css"
+    - name: generateCachebusterInfo
+      beforeTask: escapeNonAsciiCharacters
+---
+specVersion: "2.3"
+kind: extension
+type: task
+metadata:
+  name: vuei5-task-sfc
+task:
+  path: lib/sfcCompiler/task.js
+---
+specVersion: "2.3"
+kind: extension
+type: server-middleware
+metadata:
+  name: vuei5-middleware-sfc
+middleware:
+  path: lib/sfcCompiler/middleware.js

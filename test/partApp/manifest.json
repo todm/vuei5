@@ -1,0 +1,64 @@
+{
+	"_version": "1.12.0",
+	"sap.app": {
+		"id": "test"
+	},
+	"sap.ui5": {
+		"rootView": {
+			"viewName": "test.view.App",
+			"type": "XML",
+			"async": true,
+			"id": "app"
+		},
+		"models": {
+			"i18n": {
+				"type": "sap.ui.model.resource.ResourceModel",
+				"settings": {
+					"bundleName": "test.i18n.i18n",
+					"supportedLocales": ["en"],
+					"fallbackLocale": "en"
+				}
+			}
+		},
+		"routing": {
+			"routes": [
+				{
+					"pattern": "",
+					"name": "home"
+				},
+				{
+					"pattern": "increment",
+					"name": "increment"
+				},
+				{
+					"pattern": "model",
+					"name": "model"
+				},
+				{
+					"pattern": "slots",
+					"name": "slots"
+				},
+				{
+					"pattern": "routerDemo/:myParameter:",
+					"name": "routerDemo"
+				},
+				{
+					"pattern": "html",
+					"name": "html"
+				},
+				{
+					"pattern": "toggle",
+					"name": "toggle"
+				},
+				{
+					"pattern": "i18n",
+					"name": "i18n"
+				},
+				{
+					"pattern": "jscomponent",
+					"name": "jscomponent"
+				}
+			]
+		}
+	}
+}
