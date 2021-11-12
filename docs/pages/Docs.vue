@@ -43,7 +43,7 @@ import UI5HTML from "../components/docs/library/UI5HTML";
 import Utils from "../components/docs/library/Utils";
 import SFCTask from '../components/docs/ui5Task/SFCTask';
 import SFCMiddleware from '../components/docs/ui5Task/SFCMiddleware';
-import UpdateVue from '../components/docs/scripts/UpdateVue';
+import TransformVue from '../components/docs/scripts/TransformVue';
 import Install from '../components/docs/gettingStarted/Install';
 import Components from '../components/docs/gettingStarted/Components';
 import Routing from '../components/docs/gettingStarted/Routing';
@@ -157,9 +157,9 @@ const pages = [
   {
     c: ListItem,
     type: "Script",
-    name: "updateVue",
-    label: "updateVue",
-    component: UpdateVue,
+    name: "transformVue",
+    label: "transformVue",
+    component: TransformVue,
   },
 ];
 

@@ -81,13 +81,15 @@ server:
 
 ## Updating vue.js
 
-On installation the newest version of vue.js will be downloaded from a cdn ([unpkg.com/vue@next/](https://unpkg.com/vue@next/dist/vue.esm-browser.prod.js)) and converted from esm to a ui5 module.
+After installation a ui5 compatible version of vue will be generated from the installed vue package.
 
-If you want to update or reinstall your vuejs version you can execute the script manually
+If you want to reinstall your vuejs version you can execute the script manually
 
 ```sh
-node node_modules/vuei5/scripts/updateVue.js [<cdnURL>]
+node node_modules/vuei5/scripts/transformVue.js [--dev]
 ```
+
+By default the minified prod version of vue will be used. You can add `--dev` to use the bigger unminified dev version.
 
 ## Documentation
 
