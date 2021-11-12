@@ -1,6 +1,6 @@
 {
   "name": "@todms/vuei5",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Vue.js for native ui5 apps",
   "main": "index.js",
   "directories": {
@@ -9,10 +9,10 @@
     "test": "test"
   },
   "scripts": {
-    "install": "node scripts/updateVue.js",
+    "install": "node scripts/transformVue.js",
     "docs:build": "ui5 build --config ui5-docs.yaml --dest ./dist --clean-dest",
     "postdocs:build": "node scripts/_copyResources.js",
-    "update-vue": "node scripts/updateVue.js"
+    "update-vue": "node scripts/transformVue.js"
   },
   "repository": {
     "type": "git",
@@ -38,7 +38,6 @@
     "@todms/babel-plugin-ui5-esm": "^1.0.1",
     "@ui5/logger": "^2.0.1",
     "micromatch": "^4.0.4",
-    "node-fetch": "^2.1.0",
     "vue": "^3.2.21"
   },
   "devDependencies": {
