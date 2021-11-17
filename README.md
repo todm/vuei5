@@ -54,7 +54,7 @@ Add the package to the ui5 dependencies of `package.json`
 "ui5": {
   "dependencies": [
     #...
-    "vuei5",
+    "@todms/vuei5",
   ]
 }
 ```

@@ -134,4 +134,11 @@ sap.ui.define(
     });
   }
 );`;
+
+const packageJson = `"ui5": {
+  "dependencies": [
+    #...
+    "@todms/vuei5",
+  ]
+}`
 </script>
