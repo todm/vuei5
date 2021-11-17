@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" /> -->
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vuei5 Test</title>
+    <base href="./" />
+    <link rel="stylesheet" href="./style.css" />
+    <script
+      id="sap-ui-bootstrap"
+      src="https://openui5.hana.ondemand.com/resources/sap-ui-core.js"
+      data-sap-ui-theme="sap_fiori_3"
+      data-sap-ui-resourceroots='{
+            "vuei5": "resources/vuei5",
+            "test": "./"
+        }'
+      data-sap-ui-oninit="module:sap/ui/core/ComponentSupport"
+      data-sap-ui-compatVersion="edge"
+      data-sap-ui-async="true"
+      data-sap-ui-preload="async"
+    ></script>
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/prismjs@1.25.0/themes/prism-tomorrow.css"
+    />
+    <script src="https://unpkg.com/prismjs@1.25.0/prism.js" defer></script>
+    <script
+      src="https://unpkg.com/prismjs@1.25.0/components/prism-typescript.min.js"
+      defer
+    ></script>
+    <script
+      src="https://unpkg.com/prismjs@1.25.0/components/prism-yaml.min.js"
+      defer
+    ></script>
+
+    <style>
+      .vuei5-loader {
+        position: absolute;
+        inset: 0;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        pointer-events: none;
+        background-color: rgb(0 0 0 / 78%);
+        opacity: 1;
+        transition: all 0.5s;
+      }
+      .vuei5-loader .content h2 {
+        color: white;
+      }
+      .vuei5-loader .content img {
+        animation: spin 2s cubic-bezier(0.8, 0.2, 0.2, 0.8) infinite;
+        width: 8vw;
+      }
+      @keyframes spin {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+  </head>
+  <body class="sapUiBody">
+    <div id="outlet"></div>
+    <div
+      data-sap-ui-component
+      data-name="test"
+      data-id="container"
+      data-settings='{"id" : "test"}'
+    ></div>
+    <div class="vuei5-loader">
+      <div class="content">
+        <img
+          src="data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8' %3F%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg width='100%25' height='100%25' viewBox='0 0 124 124' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xml:space='preserve' xmlns:serif='http://www.serif.com/' style='fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;'%3E%3Cg transform='matrix(1,0,0,1,-2.24427,-2.24326)'%3E%3Ccircle cx='64.001' cy='64' r='61.757' style='fill:rgb(235,235,235);'/%3E%3Cg transform='matrix(0.347869,0,0,0.347869,-22.9674,0.638048)'%3E%3Cpath d='M227.146,178.3C224.699,178.869 222.355,177.845 218.444,176.655C214.787,175.543 213.492,175.756 213.492,175.756C213.492,175.756 217.405,173.079 221.231,171.317C225.117,169.528 228.435,169.435 229.979,172.995C230.994,175.334 229.153,177.833 227.146,178.3ZM246.608,29.436C246.608,29.436 246.576,42.147 279.804,62.334C344.317,101.529 344.1,137.462 344.1,145.003C344.1,177.035 310.761,197.742 295.292,180.983C295.292,180.983 310.471,169.718 310.471,152.396C310.471,152.396 299.34,159.733 293.521,160.998C293.521,160.998 301.11,147.59 297.569,124.063C297.569,124.063 291.498,135.953 272.019,145.566C272.019,145.566 279.607,128.617 272.524,112.426C272.524,112.426 274.042,132.665 228,154.167C181.959,175.67 196.125,197.173 196.125,197.173C196.125,197.173 205.304,187.427 220.886,194.272C241.966,203.532 233.447,240.694 199.548,240.694C166.545,240.694 144.882,204.802 144.882,176.776C144.882,165.187 146.138,143.868 167.074,120.42C183.727,101.77 204.26,91.93 208.667,71.306C185.847,92.452 144.702,106.251 120.233,142.438C98.255,174.942 105.391,217.935 109.347,231.159C127.291,291.136 182.894,334.85 248.708,334.85C329.034,334.85 394.988,270.57 394.988,190.245C394.988,68.64 279.38,55.737 246.608,29.436Z' style='fill:rgb(53,73,94);fill-rule:nonzero;'/%3E%3C/g%3E%3Cg transform='matrix(0.347869,0,0,0.347869,-22.9674,0.638048)'%3E%3Cpath d='M394.988,190.245C394.988,166.178 390.411,146.424 382.893,129.927C384.5,135.068 396.856,179.088 361.34,214.604C340.292,235.652 304.477,242.936 275.682,219.923C275.682,219.923 279.332,277.697 210.898,286.217C166.209,291.781 131.035,263.303 115.776,227.03C105.167,201.814 104.188,172.833 116.32,148.9C99.181,180.408 105.648,218.794 109.347,231.16C127.29,291.136 182.894,334.849 248.708,334.849C329.033,334.849 394.988,270.57 394.988,190.245Z' style='fill:rgb(65,184,131);fill-rule:nonzero;'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E"
+          alt=""
+        />
+        <h2>Loading...</h2>
+      </div>
+    </div>
+  </body>
+</html>

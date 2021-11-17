@@ -1,0 +1,38 @@
+{
+	"_version": "1.12.0",
+	"sap.app": {
+		"id": "vuei5.test.webapp"
+	},
+	"sap.ui5": {
+		"models": {
+			"i18n": {
+				"type": "sap.ui.model.resource.ResourceModel",
+				"settings": {
+					"bundleName": "test.i18n.i18n",
+					"supportedLocales": ["en"],
+					"fallbackLocale": "en"
+				}
+			}
+		},
+		"routing": {
+			"routes": [
+				{
+					"pattern": "",
+					"name": "home"
+				},
+				{
+					"pattern": "examples/:example:",
+					"name": "examples"
+				},
+				{
+					"pattern": "docs/:module:",
+					"name": "docs"
+				},
+				{
+					"pattern": "getting-started",
+					"name": "start"
+				}
+			]
+		}
+	}
+}
